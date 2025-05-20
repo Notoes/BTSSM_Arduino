@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.example.btssm"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 1
+        versionName "0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
+    // Placeholder for USB serial library
+    implementation 'com.github.felHR85:UsbSerial:6.1.0'
+}
